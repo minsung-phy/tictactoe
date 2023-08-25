@@ -1,0 +1,13 @@
+✅ write 함수
+
+C언어의 파일에 데이터를 전달하는데 사용하는 함수 중 하나
+
+헤더 : <unistd.h>
+
+매개변수 : int fd(파일 디스크립터), void *buf(전송할 데이터가 들어있는 버퍼), size_t nbytes(보낼 데이터의 최대 길이)
+               write(clnt_sock, board, sizeof(board));
+
+반환값 : 전송한 바이트 수 (타입 : ssize_t)
+
+             (실패 시 -1 반환)
+
